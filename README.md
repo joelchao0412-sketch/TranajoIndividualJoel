@@ -1,5 +1,5 @@
 
-
+```markdown
 # Generadores y Pruebas de Aleatoriedad
 
 ## Descripción
@@ -30,6 +30,17 @@ proyecto/
 │   ├── menu_lateral.py
 │   ├── ventana_principal.py
 │   └── frames.py          # Contiene todos los frames de la interfaz
+│── imagenes/               # Carpeta con capturas de pantalla
+│   ├── menu_principal.png
+│   ├── cuadrados_medios.png
+│   ├── productos_medios.png
+│   ├── multiplicador_constante.png
+│   ├── chi_cuadrado.png
+│   ├── chi_cuadrado_grafico.png
+│   ├── prueba_medias.png
+│   ├── prueba_medias_grafico.png
+│   ├── prueba_varianza.png
+│   └── prueba_varianza_grafico.png
 ```
 
 ## Requisitos
@@ -50,6 +61,78 @@ proyecto/
    python main.py
    ```
 2. Se abrirá una ventana con un menú lateral que te permitirá seleccionar entre generadores y pruebas.
+
+### Capturas de Pantalla
+
+#### 1. Ventana Principal
+![Menú Principal](imagenes/menu_principal.png)
+
+**Descripción**: Ventana principal de la aplicación con el menú lateral que muestra las opciones disponibles. En la parte izquierda se encuentran los generadores de números aleatorios (Cuadrados Medios, Productos Medios, Multiplicador Constante) y en la parte inferior las pruebas estadísticas (Chi Cuadrado, Prueba de Medias, Prueba de Varianza). El área principal de la derecha muestra el contenido seleccionado.
+
+---
+
+#### 2. Generador de Cuadrados Medios
+![Cuadrados Medios](imagenes/cuadrados_medios.png)
+
+**Descripción**: Interfaz del generador de cuadrados medios. Se muestran campos para ingresar la semilla inicial (4 dígitos) y la cantidad de números a generar. Al presionar el botón "Generar", se muestran los números generados en el área de resultados. En este ejemplo se generaron 5 números con semilla 1234.
+
+---
+
+#### 3. Generador de Productos Medios
+![Productos Medios](imagenes/productos_medios.png)
+
+**Descripción**: Interfaz del generador de productos medios. Requiere dos semillas iniciales (4 dígitos cada una) y la cantidad de números a generar. El área de resultados muestra la secuencia de números generados. En este ejemplo se usaron las semillas 1234 y 5678 para generar 5 números.
+
+---
+
+#### 4. Generador de Multiplicador Constante
+![Multiplicador Constante](imagenes/multiplicador_constante.png)
+
+**Descripción**: Interfaz del generador de multiplicador constante. Permite ingresar una semilla inicial (4 dígitos), una constante multiplicadora (4 dígitos) y la cantidad de números a generar. Los resultados se muestran en el área de texto inferior. En este ejemplo se usó semilla 1234 y constante 5678.
+
+---
+
+#### 5. Prueba Chi Cuadrado - Resultados
+![Chi Cuadrado](imagenes/chi_cuadrado.png)
+
+**Descripción**: Resultados de la prueba Chi Cuadrado. Se muestran el estadístico calculado, el valor crítico y si la prueba pasa o no. Además, se presenta un histograma textual que muestra la distribución de frecuencias en los intervalos. En este ejemplo se usaron 10 números con un nivel de confianza de 0.95.
+
+---
+
+#### 6. Prueba Chi Cuadrado - Gráfico
+![Chi Cuadrado Gráfico](imagenes/chi_cuadrado_grafico.png)
+
+**Descripción**: Ventana emergente con el gráfico de histograma de la prueba Chi Cuadrado. Muestra visualmente la distribución de frecuencias en los intervalos. El gráfico se genera al presionar el botón "Mostrar Gráfico" en la interfaz principal de la prueba.
+
+---
+
+#### 7. Prueba de Medias - Resultados
+![Prueba de Medias](imagenes/prueba_medias.png)
+
+**Descripción**: Resultados de la prueba de medias. Muestra la media muestral, el estadístico Z calculado, los límites de aceptación y si la prueba pasa o no. En este ejemplo se evaluaron 10 números con un nivel de confianza de 0.95.
+
+---
+
+#### 8. Prueba de Medias - Gráfico
+![Prueba de Medias Gráfico](imagenes/prueba_medias_grafico.png)
+
+**Descripción**: Gráfico del intervalo de aceptación para la prueba de medias. La línea azul representa el intervalo de aceptación y el punto rojo muestra la media muestral. Este gráfico ayuda a visualizar si la media está dentro de los límites aceptables.
+
+---
+
+#### 9. Prueba de Varianza - Resultados
+![Prueba de Varianza](imagenes/prueba_varianza.png)
+
+**Descripción**: Resultados de la prueba de varianza. Muestra la varianza muestral, los límites de aceptación, la varianza teórica (1/12) y si la prueba pasa o no. En este ejemplo se evaluaron 10 números con un nivel de confianza de 0.95.
+
+---
+
+#### 10. Prueba de Varianza - Gráfico
+![Prueba de Varianza Gráfico](imagenes/prueba_varianza_grafico.png)
+
+**Descripción**: Gráfico de los límites de aceptación para la prueba de varianza. Las líneas rojas discontinuas representan los límites inferior y superior, la línea verde punteada muestra la varianza teórica y la línea azul sólida representa la varianza muestral.
+
+---
 
 ### Generadores
 - **Cuadrados Medios**: Ingresa una semilla de 4 dígitos y la cantidad de números a generar.
@@ -123,3 +206,5 @@ Se proporcionan ejemplos de prueba para cada generador y cada prueba estadístic
 - La aplicación está diseñada para ser modular y fácil de extender.
 - Los generadores manejan casos de degeneración (por ejemplo, cuando se llega a cero).
 - Las pruebas estadísticas muestran resultados numéricos y gráficos para facilitar la interpretación.
+- Las imágenes de captura de pantalla se encuentran en la carpeta `imagenes/` y muestran el funcionamiento real de la aplicación.
+
