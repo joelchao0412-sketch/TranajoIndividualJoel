@@ -1,5 +1,5 @@
 
-```markdown
+
 # Generadores y Pruebas de Aleatoriedad
 
 ## Descripción
@@ -30,17 +30,6 @@ proyecto/
 │   ├── menu_lateral.py
 │   ├── ventana_principal.py
 │   └── frames.py          # Contiene todos los frames de la interfaz
-│── imagenes/               # Carpeta con capturas de pantalla
-│   ├── menu_principal.png
-│   ├── cuadrados_medios.png
-│   ├── productos_medios.png
-│   ├── multiplicador_constante.png
-│   ├── chi_cuadrado.png
-│   ├── chi_cuadrado_grafico.png
-│   ├── prueba_medias.png
-│   ├── prueba_medias_grafico.png
-│   ├── prueba_varianza.png
-│   └── prueba_varianza_grafico.png
 ```
 
 ## Requisitos
