@@ -3,7 +3,7 @@ from tkinter import ttk
 from gui.menu_lateral import MenuLateral
 from gui.frames import (FrameCuadradosMedios, FrameProductosMedios, 
                         FrameMultiplicadorConstante, FrameChiCuadrado,
-                        FramePruebaMedias, FramePruebaVarianza)
+                        FramePruebaMedias, FramePruebaVarianza, FrameDistribuciones)
 
 class VentanaPrincipal(tk.Tk):
     def __init__(self):
@@ -29,7 +29,7 @@ class VentanaPrincipal(tk.Tk):
         # Crear frames para cada sección
         for F in (FrameCuadradosMedios, FrameProductosMedios, 
                  FrameMultiplicadorConstante, FrameChiCuadrado,
-                 FramePruebaMedias, FramePruebaVarianza):
+                 FramePruebaMedias, FramePruebaVarianza, FrameDistribuciones):
             frame = F(self.container, self)
             self.frames[F.__name__] = frame
             frame.grid(row=0, column=1, sticky="nsew")

@@ -45,3 +45,10 @@ class MenuLateral(tk.Frame):
         btn_varianza = tk.Button(self, text="Prueba de Varianza", 
                                 command=lambda: controller.mostrar_frame("FramePruebaVarianza"))
         btn_varianza.pack(fill="x", padx=10, pady=2)
+        # Botones para distribuciones
+        tk.Label(self, text="Distribuciones", font=("Arial", 12, "bold"), 
+                bg="#f0f0f0").pack(pady=(20, 5), anchor="w")
+
+        btn_distribuciones = tk.Button(self, text="Distribuciones", 
+                                      command=lambda: controller.mostrar_frame("FrameDistribuciones"))
+        btn_distribuciones.pack(fill="x", padx=10, pady=2)
